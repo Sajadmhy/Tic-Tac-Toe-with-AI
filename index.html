@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="container">
+    <h1>Tic Tac Toe</h1>
+
+    <p id="ins">
+        Game starts by just tapping on boxes <br><br>You start as <b>Player X</b> and Computer
+        as <b>Player 0</b>
+    </p>
+    <br><br>
+
+    <input type="text" id="b1" onclick="cellOne(); checkStat();" readonly>
+    <input type="text" id="b2" onclick="cellTwo(); checkStat();" readonly>
+    <input type="text" id="b3" onclick="cellThree(); checkStat();" readonly>
+    <br><br>
+    <input type="text" id="b4" onclick="cellFour(); checkStat();" readonly>
+    <input type="text" id="b5" onclick="cellFive(); checkStat();" readonly>
+    <input type="text" id="b6" onclick="cellSix(); checkStat();" readonly>
+    <br><br>
+    <input type="text" id="b7" onclick="cellSeven(); checkStat();" readonly>
+    <input type="text" id="b8" onclick="cellEight(); checkStat();" readonly>
+    <input type="text" id="b9" onclick="cellNine(); checkStat();" readonly>
+    
+    <br><br><br>
+    <button id="button" onclick="resetGame()">Reset</button>
+
+    <p id="print"></p>
+</div>
+    <script src="ai.js"></script>
+</body>
+</html>
