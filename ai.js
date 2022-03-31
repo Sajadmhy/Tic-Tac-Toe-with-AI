@@ -36,9 +36,7 @@ function aiChoice() {
         eval("b"+i).value = "0";
     eval("b"+i).disabled = true;
     } else {
-        i = randomIntFromInterval(1,9);
-        eval("b"+i).value = "0";
-        eval("b"+i).disabled = true;
+        aiChoice();
      
 }};
 
